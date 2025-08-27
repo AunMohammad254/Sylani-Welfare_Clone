@@ -1,0 +1,325 @@
+[
+  {
+    "id": "TC001",
+    "title": "Responsive Layout Adjustment on Desktop",
+    "description": "Verify that the website layout adjusts fluidly and correctly on a desktop screen size without overlapping or misaligned elements.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the homepage on a desktop browser with 1920x1080 resolution"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that all sections, including navigation bar, service icons, media updates, newsletter subscription, and footer are properly aligned and accessible"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Responsive Layout Adjustment on Tablet",
+    "description": "Verify the website layout fluidly adjusts and remains user-friendly on tablet screen sizes between 768px and 1024px width.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the homepage on a tablet device or browser emulator with 800x1024 resolution"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the navigation bar, dropdown menus, service icons, embedded videos, newsletter form, and footer display correctly without UI glitches"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Responsive Layout Adjustment on Mobile",
+    "description": "Verify the website layout fluidly adjusts and remains navigable on mobile screen sizes below 480px width.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the homepage on a mobile phone or browser emulator at 375x667 resolution"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the navigation bar collapses into toggle menu and that all content including service sections, embedded videos, newsletter form, and footer are fully visible and usable"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Mobile Navigation Dropdown Toggle Functionality",
+    "description": "Verify that the mobile navigation toggle button reveals and hides the dropdown menu smoothly without UI glitches.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the website on a mobile device or emulator"
+      },
+      {
+        "type": "action",
+        "description": "Tap the navigation toggle button"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the dropdown navigation menu slides down and all menu items are visible"
+      },
+      {
+        "type": "action",
+        "description": "Tap the toggle button again"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the dropdown navigation menu smoothly collapses"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Service Section Icon and Description Accuracy",
+    "description": "Verify that the service sections display the correct icons and concise information as per the original NGO design.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the services section on homepage"
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure each service block contains a Font Awesome icon matching the welfare program and the description text is concise and visible"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Embedded YouTube Video Playback and Responsiveness",
+    "description": "Verify that embedded YouTube videos in the media updates section play smoothly and are responsive to screen size changes.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the media updates section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the YouTube video is present and visible"
+      },
+      {
+        "type": "action",
+        "description": "Play the embedded YouTube video"
+      },
+      {
+        "type": "assertion",
+        "description": "Video plays without buffering or UI errors"
+      },
+      {
+        "type": "action",
+        "description": "Resize browser window to tablet and mobile sizes"
+      },
+      {
+        "type": "assertion",
+        "description": "Video resizes correctly maintaining aspect ratio and remains playable"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Newsletter Subscription Form Email Validation - Valid Email",
+    "description": "Verify that the newsletter subscription form accepts a properly formatted email and submits successfully.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Saylani Guide section with the newsletter subscription form"
+      },
+      {
+        "type": "action",
+        "description": "Input a valid email address (e.g., test@example.com) into the subscription email field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the subscribe button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify successful submission confirmation or message"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Newsletter Subscription Form Email Validation - Invalid Email",
+    "description": "Verify that the newsletter subscription form rejects invalid email addresses and displays relevant error messages.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the subscription form"
+      },
+      {
+        "type": "action",
+        "description": "Input invalid email addresses one by one (e.g., 'test', 'test@', 'test@.com')"
+      },
+      {
+        "type": "action",
+        "description": "Attempt to submit the form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the form prevents submission and displays appropriate validation error messages"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Footer Content Accuracy and Social Media Links Functionality",
+    "description": "Verify that all footer elements including contact info and social media links are present, accurate, and functional.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Scroll to the footer section on any page"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that contact information is complete and matches the original site details"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that social media icons are visible with Font Awesome icons"
+      },
+      {
+        "type": "action",
+        "description": "Click each social media link"
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure each link opens the corresponding social media page in a new tab"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Cross-Browser Compatibility Check",
+    "description": "Verify website functionality and appearance are consistent across Chrome, Firefox, Safari, and Edge browsers.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open homepage on latest versions of Chrome, Firefox, Safari, and Edge browsers"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify navigation bar, dropdown toggles, service sections, embedded media, newsletter form, and footer render correctly and function identically"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Navigation Link Accessibility and Correct Routing",
+    "description": "Validate that all navigation links including About page and other primary links direct users to correct pages without errors.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Click each link in the navigation menu (desktop and mobile toggle)"
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure user is routed to the appropriate page and page contents load correctly"
+      },
+      {
+        "type": "action",
+        "description": "Verify About page displays correct organizational information matching the original site"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Image and Icon Optimization Check",
+    "description": "Ensure that all images including icons and footer images are optimized for fast load times without quality degradation.",
+    "category": "performance",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load homepage and relevant pages containing images"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify images load quickly on different network speeds and remain visually clear without distortions"
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Font Implementation Verification",
+    "description": "Verify that the website uses Google Fonts Montserrat and Poppins correctly across all textual elements with consistent styling.",
+    "category": "ui",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open multiple pages and inspect textual elements"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm font-family matches Montserrat and Poppins as specified and fonts render clearly"
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "Media Query Breakpoints Validation",
+    "description": "Test the website at specified media query breakpoints to ensure adaptive layout changes activate correctly.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Resize browser window or use device emulators to test breakpoints for mobile, tablet, and desktop"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that layout adjustments such as navigation toggle and service section reflow occur exactly at specified media query widths"
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Toggle Menu Accessibility Keyboard Navigation",
+    "description": "Verify that the mobile toggle menu is accessible via keyboard interaction (tab, enter keys).",
+    "category": "accessibility",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open site in mobile resolution or emulator"
+      },
+      {
+        "type": "action",
+        "description": "Use tab key to navigate to the toggle button"
+      },
+      {
+        "type": "action",
+        "description": "Press Enter/Space to activate toggle menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Dropdown menu opens and items are reachable via keyboard navigation"
+      }
+    ]
+  }
+]

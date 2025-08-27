@@ -1,0 +1,45 @@
+{
+  "tech_stack": ["HTML5", "CSS3", "JavaScript", "Font Awesome", "Google Fonts"],
+  "features": [
+    {
+      "name": "Responsive Navigation",
+      "description": "Navigation bar with dropdown menu for mobile devices",
+      "files": ["index.html", "style.css", "script.js"]
+    },
+    {
+      "name": "Toggle Menu",
+      "description": "JavaScript functionality to toggle mobile menu",
+      "files": ["script.js"]
+    },
+    {
+      "name": "Service Sections",
+      "description": "Visual representation of welfare services with icons",
+      "files": ["index.html", "style.css", "Small Icons/"]
+    },
+    {
+      "name": "Media Updates",
+      "description": "YouTube video embeds for media updates",
+      "files": ["index.html", "style.css"]
+    },
+    {
+      "name": "Newsletter Subscription",
+      "description": "Email subscription form in Saylani Guide section",
+      "files": ["index.html", "style.css"]
+    },
+    {
+      "name": "Footer",
+      "description": "Footer with contact information and social media links",
+      "files": ["index.html", "style.css", "Images/footer-img.png"]
+    },
+    {
+      "name": "About Page",
+      "description": "About page with organization information",
+      "files": ["Responsive Saylani Website !! (Saylani) Assignment/about-intoroduction.html"]
+    },
+    {
+      "name": "Responsive Design",
+      "description": "Media queries for different screen sizes",
+      "files": ["style.css"]
+    }
+  ]
+}
